@@ -3,6 +3,11 @@ import "./Banner.css";
 import M from "materialize-css/dist/js/materialize.min.js";
 import bannerOne from "../../assets/hero-image.svg";
 import bannerTwo from "../../assets/hero-image.svg";
+import paystack from "../../assets/paystack-removebg-preview.svg";
+import google from "../../assets/google-removebg-preview.svg";
+import kpmg from "../../assets/kpmg-removebg-preview.svg";
+import locationIcon from "../../assets/location-icon.svg";
+import searchIcon from "../../assets/search-icon.svg";
 
 class Banner extends Component {
   componentDidMount() {
@@ -115,10 +120,54 @@ class Banner extends Component {
                         employer websites, we create a premium experience for
                         job seekers, employers, and data seekers alike.
                       </p>
-                      <div className="btn hidden-xs btn-bigger">buy a car</div>
+                      {/* <div className="btn hidden-xs btn-bigger">buy a car</div> */}
+                      <div className="form-div">
+                        <form>
+                          <div className="form-group">
+                            <div className="input-no-icon">
+                              <input
+                                type="text"
+                                placeholder="Enter keywords, skill, interest"
+                                id="password"
+                                name="password"
+                              />
+                            </div>
+                            <div className="input-with-icon">
+                              <img
+                                src={locationIcon}
+                                alt=" "
+                                className="location-icon"
+                              />
+                              <input
+                                type="text"
+                                placeholder="Location"
+                                id="password"
+                                name="password"
+                              />
+                            </div>
+                            <button className="banner-search-btn">
+                              <img src={searchIcon} alt="" />
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                      <div className="trusted-companies-div">
+                        <p>Trusted by:</p>
+                        <div className="trusted-companies">
+                          <div className="trusted-company">
+                            <img src={paystack} alt="" />
+                          </div>
+                          <div className="trusted-company">
+                            <img src={google} alt="" />
+                          </div>
+                          <div className="trusted-company">
+                            <img src={kpmg} alt="" />
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div className="col s12 m5 offset-m0 l5 offset-l2">
+                  <div className="col s12 m5 offset-m0 l6 offset-l1">
                     <div className="rel right-align banner-home-img">
                       <img
                         src={bannerTwo}
@@ -133,11 +182,55 @@ class Banner extends Component {
                       employer websites, we create a premium experience for job
                       seekers, employers, and data seekers alike.
                     </p>
-                    <div className="btn btn-bigger ">buy a car</div>
+                    {/* <div className="btn btn-bigger ">buy a car</div> */}
+                    <div className="form-div">
+                      <form>
+                        <div className="form-group">
+                          <div className="input-no-icon">
+                            <input
+                              type="text"
+                              placeholder="Enter keywords, skill, interest"
+                              id="password"
+                              name="password"
+                            />
+                          </div>
+                          <div className="input-with-icon">
+                            <img
+                              src={locationIcon}
+                              alt=" "
+                              className="location-icon"
+                            />
+                            <input
+                              type="text"
+                              placeholder="Location"
+                              id="password"
+                              name="password"
+                            />
+                          </div>
+                          <button className="banner-search-btn">
+                            <img src={searchIcon} alt="" />
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <div className="trusted-companies-div">
+                      <p>Trusted by:</p>
+                      <div className="trusted-companies">
+                        <div className="trusted-company">
+                          <img src={paystack} alt="" />
+                        </div>
+                        <div className="trusted-company">
+                          <img src={google} alt="" />
+                        </div>
+                        <div className="trusted-company">
+                          <img src={kpmg} alt="" />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="carousel-item">
+              {/* <div className="carousel-item">
                 <div className="col s12 pad0 center-sm">
                   <div className="col s12 m7 l5">
                     <div className="main-text-container">
@@ -170,7 +263,7 @@ class Banner extends Component {
                     <div className="btn btn-bigger">buy a car</div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

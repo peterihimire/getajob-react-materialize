@@ -211,9 +211,9 @@ p {
 .flex-wrap {
   flex-wrap: wrap;
 }
-.center-sm {
+/* .center-sm {
   text-align: center;
-}
+} */
 .sec-color {
   color: var(--sec-color);
 }
@@ -234,7 +234,6 @@ p {
 .btn a {
   color: var(--main-white) !important;
   text-decoration: none;
-
 }
 .btn-bigger {
   height: 44px !important;
@@ -248,7 +247,7 @@ p {
 @media only screen and (min-width: 1201px) {
 }
 /***** LAPTOP *****/
-@media (min-width: 993px) {
+/* @media (min-width: 993px) {
   .container {
     width: 80% !important;
   }
@@ -258,7 +257,6 @@ p {
 
   .hidden-md {
     display: none;
-    /* visibility: hidden; */
   }
   .hidden-xs {
     display: none !important;
@@ -266,9 +264,9 @@ p {
   .visible-xl {
     display: block !important;
   }
-}
+} */
 /***** iPAD *****/
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .btn-full-width {
     width: 100%;
   }
@@ -278,9 +276,9 @@ p {
   .visible-md {
     display: block !important;
   }
-}
+} */
 /***** iPHONE *****/
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .hidden-xs {
     display: none !important;
   }
@@ -296,9 +294,9 @@ p {
   .center-xs {
     text-align: center;
   }
-}
+} */
 
-/* @media (min-width: 993px) {
+@media (min-width: 993px) {
   .container {
     width: 80% !important;
   }
@@ -321,4 +319,4 @@ p {
   .center-xs {
     text-align: center;
   }
-} */
+}
