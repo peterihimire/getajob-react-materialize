@@ -229,11 +229,12 @@ p {
   height: 38px !important;
   line-height: 38px !important;
   border: none !important;
-  border-radius: 50px;
+  border-radius: 50px !important;
 }
 .btn a {
   color: var(--main-white) !important;
   text-decoration: none;
+
 }
 .btn-bigger {
   height: 44px !important;
@@ -242,7 +243,6 @@ p {
   font-weight: bolder;
   width: 160px;
 }
-
 
 /***** DESKTOP *****/
 @media only screen and (min-width: 1201px) {
@@ -297,7 +297,6 @@ p {
     text-align: center;
   }
 }
-
 
 /* @media (min-width: 993px) {
   .container {
