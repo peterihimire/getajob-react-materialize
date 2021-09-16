@@ -1,13 +1,14 @@
 import React from "react";
 import Footer from "../../shared/components/Footer";
 import Navbar from "../../shared/components/navigation/Navbar";
+import Banner from "../../shared/components/Banner";
 
 const HomePage = () => {
   return (
     <div id="page-container" className="App">
       <div id="content-wrapper">
         <Navbar />
-        {/* <Banner /> */}
+        <Banner />
         {/* <RecommendedJobs /> */}
         <div className="main-content">
           <div className="main-content-container">

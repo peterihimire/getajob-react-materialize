@@ -1,0 +1,88 @@
+section.home {
+  /* position: relative !important;
+  height: 100vh;
+  min-height: 600px;
+  padding-top: 0; */
+
+  position: relative !important;
+  height: 100vh;
+  min-height: 600px;
+  padding-top: 0;
+  background: url("../../assets/banner-transparent-green.svg") no-repeat;
+  /* object-fit: contain; */
+  /* background-origin: border-box; */
+  /* background-position: center; */
+  /* MADE SURE THE IMAGE IS CONTAINED IN THE SUPPLIED CONTAINER HEIGHT */
+  background-size: contain;
+  padding: 0 2rem;
+  color: var(--main-black);
+  /* background-color: red; */
+}
+
+.carousel.full-height {
+  height: 100% !important ;
+}
+div.carousel-item {
+  padding-top: 14%;
+  /* background-color: violet; */
+}
+.main-text-container {
+  position: relative;
+  top: 60px;
+}
+.main-text-container p {
+  color: var(--main-black) !important;
+  font-family: lato;
+}
+.main-text-container h1 {
+  /* font-size: 50px;
+  margin: 0.8rem 0 1.68rem 0;
+  color: var(--pry-color); */
+}
+.banner-home-img {
+  /* padding: 4rem 0 0 0; */
+}
+
+/* LAPTOP */
+/* @media (min-width: 993px) {
+  .main-text-container h1 {
+    font-size: 100px;
+  }
+} */
+
+/* TABLET */
+@media (max-width: 992px) {
+  .home .carousel-item {
+    background-position: center center;
+  }
+  .main-text-container {
+    top: initial;
+    bottom: 25%;
+  }
+  .main-text-container h1 {
+    font-size: 47px;
+  }
+  .banner-home-img {
+    padding: 4rem 0 0 0;
+  }
+}
+
+/* PHONE */
+@media (max-width: 600px) {
+  section.home {
+    min-height: 825px;
+  }
+  .main-text-container h1 {
+    /* font-size: 30px; */
+  }
+  .main-text-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .main-text-container h4 {
+    font-size: 38px;
+  }
+  .banner-home-img {
+    padding: 0rem 0 0 0;
+  }
+}

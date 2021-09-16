@@ -3,8 +3,8 @@
 }
 nav.trans-nav {
   position: fixed;
-  /* background-color: transparent; */
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
+  /* background-color: rgb(255, 255, 255); */
   z-index: 10;
   height: 64px;
   margin: 0 auto;
@@ -23,7 +23,7 @@ nav.trans-nav {
 }
 .nav-login-group {
   display: flex;
-  margin: 0 0 0 20rem;
+  margin: 0 0 0 30rem;
 }
 .nav-login-group span {
   margin: 0 0 0 2rem;
