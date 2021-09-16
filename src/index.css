@@ -1,13 +1,325 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/***** LATO FONT *****/
+@font-face {
+  font-family: "lato";
+  src: local("lato"), url("./fonts/lato/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "lato-bold";
+  src: local("lato"), url("./fonts/lato/Lato-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "lato-light";
+  src: local("lato"), url("./fonts/lato/Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "lato-medium";
+  src: local("lato"), url("./fonts/lato/Lato-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "lato-thin";
+  src: local("lato"), url("./fonts/lato/Lato-Thin.ttf") format("truetype");
+}
+/***** GT WALSHEIM PRO FONT *****/
+@font-face {
+  font-family: "GT-Walsheim-Regular";
+  src: url("./fonts/gtwalsheimpro/GTWalsheimPro-Regular.eot");
+  src: local("GT Walsheim Pro Regular"), local("GTWalsheimPro-Regular"),
+    url("./fonts/gtwalsheimpro/GTWalsheimPro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/gtwalsheimpro/GTWalsheimPro-Regular.woff2") format("woff2"),
+    url("./fonts/gtwalsheimpro/GTWalsheimPro-Regular.woff") format("woff"),
+    url("./fonts/gtwalsheimpro/GTWalsheimPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT-Walsheim-Bold";
+  src: url("./fonts/gtwalsheimpro/GTWalsheimPro-Bold.eot");
+  src: local("GT Walsheim Pro Bold"), local("GTWalsheimPro-Bold"),
+    url("./fonts/gtwalsheimpro/GTWalsheimPro-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/gtwalsheimpro/GTWalsheimPro-Bold.woff2") format("woff2"),
+    url("./fonts/gtwalsheimpro/GTWalsheimPro-Bold.woff") format("woff"),
+    url("./fonts/gtwalsheimpro/GTWalsheimPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT-Walsheim-Light";
+  src: url("./fonts/gtwalsheimpro/GTWalsheimPro-Light.eot");
+  src: local("GT Walsheim Pro Light"), local("GTWalsheimPro-Light"),
+    url("./fonts/gtwalsheimpro/GTWalsheimPro-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/gtwalsheimpro/GTWalsheimPro-Light.woff2") format("woff2"),
+    url("./fonts/gtwalsheimpro/GTWalsheimPro-Light.woff") format("woff"),
+    url("./fonts/gtwalsheimpro/GTWalsheimPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  font-size: 62.5%;
+  --main-grey: #9b9b9b;
+  --sec-grey: #e5e5e5;
+  --lite-grey: #f4f5f9;
+  --dark-green: #06942a;
+  --lite-green: #06942a33;
+  --xlite-green: rgba(6, 148, 2, 0.05);
+  --main-white: #fff;
+  --main-black: #3f403f;
+
+  --main-spacing: 0.2rem;
+  --line-height: 2;
+
+  --large-font: 5rem;
+  --medium-font: 3.5rem;
+  --small-font: 2rem;
+  --xsmall-font: 1.3rem;
+
+  --main-shadow: 0px 10px 30px rgba(6, 148, 42, 0.05);
+  --main-transition: all 0.5s linear;
+
+  --font: "lato", sans-serif;
+  --font-reg: "GT-Walsheim-Regular", sans-serif;
+  --font-bold: "GT-Walsheim-Bold", sans-serif;
+  --font-lite: "GT-Walsheim-Light", sans-serif;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--dark-green);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(6, 31, 53, 0.7);
+}
+
+body {
+  font-family: var(--font);
+  background: var(--main-white);
+  overflow-x: hidden;
+  color: var(--main-black);
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  /* font-size: 1.6rem; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-bold);
+  letter-spacing: -2px;
+}
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+p {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.s5ths,
+.m5ths,
+.l5ths,
+.xl5ths {
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+.row .col.s5ths {
+  width: 20% !important;
+}
+@media only screen and (min-width: 601px) {
+  .row .col.m5ths {
+    width: 20% !important;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .row .col.l5ths {
+    width: 20% !important;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .row .col.xl5ths {
+    width: 20% !important;
+  }
+}
+
+.pad0 {
+  padding: 0 !important;
+}
+.hidden {
+  display: none;
+}
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+.text-justify {
+  text-align: justify;
+}
+.full-width {
+  width: 100%;
+}
+.full-height {
+  height: 100%;
+}
+.hidden-xs {
+  display: block;
+}
+.visible-xs {
+  display: none;
+}
+.flex-div {
+  display: flex;
+}
+.mag-0 {
+  margin: 0 !important;
+}
+.mag-bottom-0 {
+  margin-bottom: 0 !important;
+}
+.mag-top-0 {
+  margin-top: 0 !important;
+}
+.fg-1 {
+  flex-grow: 1;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.center-sm {
+  text-align: center;
+}
+.sec-color {
+  color: var(--sec-color);
+}
+.pri-color {
+  color: var(--pri-color);
+}
+.btn {
+  background-color: var(--lite-green) !important;
+  color: var(--dark-green) !important;
+  box-shadow: none !important;
+  width: 100px;
+  font-size: 1.2rem !important;
+  height: 38px !important;
+  line-height: 38px !important;
+  border: none !important;
+  border-radius: 50px;
+}
+.btn a {
+  color: var(--main-white) !important;
+  text-decoration: none;
+}
+.btn-bigger {
+  height: 44px !important;
+  line-height: 44px !important;
+  padding: 0 0rem !important;
+  font-weight: bolder;
+  width: 160px;
+}
+
+
+/***** DESKTOP *****/
+@media only screen and (min-width: 1201px) {
+}
+/***** LAPTOP *****/
+@media (min-width: 993px) {
+  .container {
+    width: 80% !important;
+  }
+  .hidden-xl {
+    display: none;
+  }
+
+  .hidden-md {
+    display: none;
+    /* visibility: hidden; */
+  }
+  .hidden-xs {
+    display: none !important;
+  }
+  .visible-xl {
+    display: block !important;
+  }
+}
+/***** iPAD *****/
+@media (max-width: 992px) {
+  .btn-full-width {
+    width: 100%;
+  }
+  .hidden-md {
+    display: none;
+  }
+  .visible-md {
+    display: block !important;
+  }
+}
+/***** iPHONE *****/
+@media (max-width: 600px) {
+  .hidden-xs {
+    display: none !important;
+  }
+  .visible-xs {
+    display: block !important;
+  }
+  .hidden-md {
+    display: none;
+  }
+  .btn-full-width {
+    width: 100%;
+  }
+  .center-xs {
+    text-align: center;
+  }
+}
+
+
+/* @media (min-width: 993px) {
+  .container {
+    width: 80% !important;
+  }
+}
+@media (max-width: 992px) {
+  .btn-full-width {
+    width: 100% !important;
+  }
+}
+@media (max-width: 600px) {
+  .hidden-xs {
+    display: none !important;
+  }
+  .visible-xs {
+    display: block !important;
+  }
+  .btn-full-width {
+    width: 100% !important;
+  }
+  .center-xs {
+    text-align: center;
+  }
+} */
