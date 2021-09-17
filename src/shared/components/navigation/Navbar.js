@@ -15,20 +15,23 @@ const Navbar = (props) => {
 
   return (
     <>
-      <div className="">
+      <div className="navbar">
         <nav className="trans-nav" role="navigation">
           <div className=" container nav-wrapper">
-            <a href="/" className="brand-logo left">
-              <img src={logo} alt="gotajob" className="logo" />
-            </a>
-            {/* <a
+            <div className="logo-container">
+              <a href="/" className="brand-logo left">
+                <img src={logo} alt="gotajob" className="logo" />
+              </a>
+            </div>
+
+            <a
               href="/"
               className="sidenav-trigger right"
               data-target="mobile-nav"
             >
               <img src={MenuIcon} alt="menu" className="menu-icon-img" />
-            </a> */}
-            <NavLink
+            </a>
+            {/* <NavLink
               exact
               activeClassName="active"
               to="/"
@@ -36,9 +39,9 @@ const Navbar = (props) => {
               data-target="mobile-nav"
             >
               <img src={MenuIcon} alt="menu" className="menu-icon-img" />
-            </NavLink>
+            </NavLink> */}
 
-            <ul className="hide-on-med-and-down right nav-links">
+            <ul className="hide-on-med-and-down  nav-links">
               <li className="nav-item">
                 <NavLink
                   exact
@@ -89,6 +92,16 @@ const Navbar = (props) => {
                   Career Advice
                 </NavLink>
               </li>
+              {/* <li className="nav-item nav-login-group">
+                <a href="/">Sign Up</a>
+                <span>
+                  <a href="/" className="btn nav-btn btn-bigger ">
+                    Log In
+                  </a>
+                </span>
+              </li> */}
+            </ul>
+            <ul className="hide-on-med-and-down  right nav-links">
               <li className="nav-item nav-login-group">
                 <a href="/">Sign Up</a>
                 <span>
@@ -99,31 +112,6 @@ const Navbar = (props) => {
               </li>
             </ul>
           </div>
-
-          {/* <div className=" nav-two hide-on-med-and-down ">
-            <div className="container nav-two-content">
-              <ul>
-                <li>
-                  <a href="/">marketplace</a>
-                </li>
-                <li>
-                  <a href="/">wholesale center</a>
-                </li>
-                <li>
-                  <a href="/">seller center</a>
-                </li>
-                <li>
-                  <a href="/">services</a>
-                </li>
-                <li>
-                  <a href="/">internships</a>
-                </li>
-                <li>
-                  <a href="/">events</a>
-                </li>
-              </ul>
-            </div>
-          </div> */}
         </nav>
       </div>
 
@@ -145,26 +133,6 @@ const Navbar = (props) => {
           </NavLink>
         </div>
 
-        <li className="nav-item sidenav-close">
-          <NavLink
-            exact
-            activeClassName="active"
-            className="navbar-single-link"
-            to="/about"
-          >
-            about us
-          </NavLink>
-        </li>
-        <li className="nav-item sidenav-close">
-          <NavLink
-            exact
-            activeClassName="active"
-            className="navbar-single-link"
-            to="/stories"
-          >
-            stories
-          </NavLink>
-        </li>
         <li className="nav-item sidenav-close">
           <NavLink
             exact

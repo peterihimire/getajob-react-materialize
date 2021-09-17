@@ -1,5 +1,10 @@
-.navbar {
+/* .navbar {
   margin: 0 auto;
+} */
+/* MADE THE FIRST NAV-LINK TO STAY IN THE CENTER */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between !important;
 }
 nav.trans-nav {
   position: fixed;
@@ -8,8 +13,11 @@ nav.trans-nav {
   z-index: 10;
   height: 64px;
   margin: 0 auto;
-  /* box-shadow: none; */
+  box-shadow: none;
 }
+/* .nav-links{
+  margin: 0 0 0 10rem;
+} */
 .nav-links a {
   color: var(--main-black);
   /* text-transform: uppercase; */
@@ -21,9 +29,12 @@ nav.trans-nav {
   position: relative;
   /* top: 20px; */
 }
+/* .brand-logo img {
+  width: 45% !important;
+} */
 .nav-login-group {
   display: flex;
-  margin: 0 0 0 30rem;
+  /* margin: 0 0 0 10rem; */
 }
 .nav-login-group span {
   margin: 0 0 0 2rem;
@@ -69,6 +80,7 @@ nav .sidenav-trigger {
   align-items: center;
   justify-content: space-between;
 }
+
 .sidenav li > a {
   color: var(--main-black);
   font-size: 1.7rem;

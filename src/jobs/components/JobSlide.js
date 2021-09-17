@@ -66,17 +66,17 @@ const JobSlide = () => {
                 firstAndLastGutter={true}
                 outsideChevron={false}
                 disableSwipe={false}
-                leftChevron={
-                  <button className="chev-btn">
-                    <img src={arrowLeft} alt="" />
-                  </button>
-                }
-                rightChevron={
-                  <button className="chev-btn">
-                    <img src={arrowRight} alt="" />
-                  </button>
-                }
-                chevronWidth={chevronWidth}
+                // leftChevron={
+                //   <button className="chev-btn">
+                //     <img src={arrowLeft} alt="" />
+                //   </button>
+                // }
+                // rightChevron={
+                //   <button className="chev-btn">
+                //     <img src={arrowRight} alt="" />
+                //   </button>
+                // }
+                // chevronWidth={chevronWidth}
                 // infiniteLoop={true}
               >
                 {jobs.map((job) => {
