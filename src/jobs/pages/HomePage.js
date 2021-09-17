@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../../shared/components/Footer";
 import Navbar from "../../shared/components/navigation/Navbar";
 import Banner from "../../shared/components/Banner";
+import RecommendedJobs from "../../jobs/components/RecommendedJobs";
 
 const HomePage = () => {
   return (
@@ -9,7 +10,7 @@ const HomePage = () => {
       <div id="content-wrapper">
         <Navbar />
         <Banner />
-        {/* <RecommendedJobs /> */}
+        <RecommendedJobs />
         <div className="main-content">
           <div className="main-content-container">
             {/* <h2>This is the homepage</h2> */}

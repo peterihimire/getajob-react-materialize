@@ -1,0 +1,182 @@
+.job-slide {
+  /* padding: 3rem 0; */
+}
+.one-slide {
+  padding: 0.5rem;
+  /* height: 270px; */
+}
+.chev-btn {
+  border: none;
+  color: var(--main-white);
+  background-color: transparent;
+  padding: 1rem 1rem 0.8rem 1rem;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* height: 100px !important; */
+}
+.chev-btn img {
+  height: 100% !important;
+}
+.carousel-div {
+  padding: 1rem 0 0 0;
+}
+
+/***** ADDED FOR TESTING PURPOSES *****/
+.job-slide {
+  padding: 3rem 0;
+}
+.one-slide {
+  padding: 0.5rem;
+  /* height: 270px; */
+}
+.chev-btn {
+  border: none;
+  color: var(--main-white);
+  background-color: transparent;
+  padding: 1rem 1rem 0.8rem 1rem;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/***** SLIDER SPECIAL CLASSES FOR THE BUTTON CONTROL *****/
+
+.bFVIv {
+  /* right: -50px; */
+}
+.xdplp {
+  /* left: -50px; */
+}
+
+/* FOR RIGHT */
+.aoTUt {
+  /* right: 60px !important; */
+}
+/* FOR LEFT */
+.dHQcjo {
+  /* left: 260px !important; */
+}
+
+.kZZOPs {
+  position: absolute;
+  height: 100% !important;
+  width: 51px;
+  cursor: pointer;
+  top: 220px !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  /* display: flex; */
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.gwZiig {
+  /* width: 100% !important; */
+  /* max-width: 100%; */
+  /* margin: 0 auto; */
+  overflow-x: visible !important;
+}
+
+.carousel-div {
+  padding: 1rem 0 0 0;
+}
+/***** TABLET *****/
+@media screen and (min-width: 768px) {
+  .carousel-div {
+    padding: 2rem 0 0 0;
+  }
+  /***** SLIDER SPECIAL CLASSES FOR THE BUTTON CONTROL *****/
+
+  .bFVIv {
+    /* right: -50px; */
+  }
+  .xdplp {
+    /* left: -50px; */
+  }
+  /* FOR RIGHT */
+  .aoTUt {
+    /* right: 80px !important; */
+  }
+  /* FOR LEFT */
+  .dHQcjo {
+    /* left: 640px !important; */
+  }
+  .kZZOPs {
+    position: absolute;
+    height: 100% !important;
+    width: 51px;
+    cursor: pointer;
+    top: 220px !important;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    /* display: flex; */
+    /* display: initial !important; */
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .gwZiig {
+    width: 80% !important;
+    /* max-width: 117rem; */
+    margin: 0 auto;
+    overflow-x: visible !important;
+  }
+}
+/***** LAPTOP *****/
+@media (min-width: 993px) {
+  /***** SLIDER SPECIAL CLASSES FOR THE BUTTON CONTROL *****/
+  .bFVIv {
+    right: -50px;
+  }
+  .xdplp {
+    left: -50px;
+  }
+  /* FOR RIGHT */
+  .aoTUt {
+    right: 280px !important;
+  }
+
+  /* FOR LEFT */
+  .dHQcjo {
+    left: 1350px !important;
+  }
+  .kZZOPs {
+    position: absolute;
+    height: 100% !important;
+    width: 51px;
+    cursor: pointer;
+    top: 200px !important;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    /* display: flex; */
+    /* display: initial !important; */
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .gwZiig {
+    width: 80% !important;
+    /* max-width: 117rem; */
+    margin: 0 auto;
+    /* makes sure the content extends through the max width and also made the the shadow box style to show well */
+    overflow-x: visible !important;
+  }
+}

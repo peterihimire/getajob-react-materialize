@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Banner.css";
 import M from "materialize-css/dist/js/materialize.min.js";
-import bannerOne from "../../assets/hero-image.svg";
+// import bannerOne from "../../assets/hero-image.svg";
 import bannerTwo from "../../assets/hero-image.svg";
 import paystack from "../../assets/paystack-removebg-preview.svg";
 import google from "../../assets/google-removebg-preview.svg";
