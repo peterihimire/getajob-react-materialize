@@ -48,7 +48,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="footer-item col s6 m3  black-text">
-              <p>information</p>
+              <p>job seekers</p>
               <ul>
                 <li>
                   <a href="/">About us</a>
@@ -62,7 +62,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="footer-item col s6 m3  black-text">
-              <p>information</p>
+              <p>employers</p>
               <ul>
                 <li>
                   <a href="/">About us</a>

@@ -1,5 +1,6 @@
 .recommended {
-  margin: 25rem 0 10rem 0;
+  margin-top: 25rem;
+  margin-bottom: 10rem;
 }
 .recommended h4 {
   color: var(--primary-color);
@@ -32,34 +33,24 @@
 .more-arrow span {
   padding: 0 0 0 1rem;
 }
-/* .recommended-title-container {
-  max-width: 117rem;
-  margin: 0 auto;
-  padding: 0 2rem;
-} */
+
 .title h4 {
   font-size: var(--medium-font);
   line-height: 1.5;
 }
 /***** TABLET *****/
 @media screen and (min-width: 768px) {
-  /* .recommended {
-    margin: 10rem 0 15rem 0;
+  .recommended {
+    /* margin: 10rem 0 15rem 0; */
+    margin-top: 10rem !important;
+    margin-bottom: 15rem !important;
   }
-  .recommended-title-container {
-    max-width: 117rem;
-    margin: 0 auto;
-    padding: 0 6rem;
-  } */
 }
 /***** LAPTOP *****/
 @media (min-width: 993px) {
-  /* .recommended {
-    margin: 10rem 0 15rem 0;
+  .recommended {
+    /* margin: 10rem 0 15rem 0; */
+    margin-top: 10rem !important;
+    margin-bottom: 15rem !important;
   }
-  .recommended-title-container {
-    max-width: 117rem;
-    margin: 0 auto;
-    padding: 0 0;
-  } */
 }

@@ -178,53 +178,55 @@ class Banner extends Component {
                     </div>
                   </div>
                   <div className="col s12 hide-on-large-only">
-                    <p>
-                      With verified, up-to-date job listings directly from
-                      employer websites, we create a premium experience for job
-                      seekers, employers, and data seekers alike.
-                    </p>
-                    {/* <div className="btn btn-bigger ">buy a car</div> */}
-                    <div className="form-div">
-                      <form>
-                        <div className="form-group">
-                          <div className="input-no-icon">
-                            <input
-                              type="text"
-                              placeholder="Enter keywords, skill, interest"
-                              id="password"
-                              name="password"
-                            />
+                    <div className="main-text-container">
+                      <p>
+                        With verified, up-to-date job listings directly from
+                        employer websites, we create a premium experience for
+                        job seekers, employers, and data seekers alike.
+                      </p>
+
+                      <div className="form-div">
+                        <form>
+                          <div className="form-group">
+                            <div className="input-no-icon">
+                              <input
+                                type="text"
+                                placeholder="Enter keywords, skill, interest"
+                                id="password"
+                                name="password"
+                              />
+                            </div>
+                            <div className="input-with-icon">
+                              <img
+                                src={locationIcon}
+                                alt=" "
+                                className="location-icon"
+                              />
+                              <input
+                                type="text"
+                                placeholder="Location"
+                                id="password"
+                                name="password"
+                              />
+                            </div>
+                            <button className="banner-search-btn">
+                              <img src={searchIcon} alt="" />
+                            </button>
                           </div>
-                          <div className="input-with-icon">
-                            <img
-                              src={locationIcon}
-                              alt=" "
-                              className="location-icon"
-                            />
-                            <input
-                              type="text"
-                              placeholder="Location"
-                              id="password"
-                              name="password"
-                            />
+                        </form>
+                      </div>
+                      <div className="trusted-companies-div">
+                        <p>Trusted by:</p>
+                        <div className="trusted-companies">
+                          <div className="trusted-company">
+                            <img src={paystack} alt="" />
                           </div>
-                          <button className="banner-search-btn">
-                            <img src={searchIcon} alt="" />
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                    <div className="trusted-companies-div">
-                      <p>Trusted by:</p>
-                      <div className="trusted-companies">
-                        <div className="trusted-company">
-                          <img src={paystack} alt="" />
-                        </div>
-                        <div className="trusted-company">
-                          <img src={google} alt="" />
-                        </div>
-                        <div className="trusted-company">
-                          <img src={kpmg} alt="" />
+                          <div className="trusted-company">
+                            <img src={google} alt="" />
+                          </div>
+                          <div className="trusted-company">
+                            <img src={kpmg} alt="" />
+                          </div>
                         </div>
                       </div>
                     </div>

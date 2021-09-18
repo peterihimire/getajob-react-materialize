@@ -10,42 +10,15 @@ const HowItWorks = () => {
         <div className="row">
           <div className="col s12">
             <div className="col s12 m7 l7 ">
+              {/* SHOWS THIS IMAGE ON PHONE TABLET AND LAPTOP SCREEN */}
               <div className="hidden-xs">
                 <div className="how-it-works-image-container">
                   <img src={topWorkersImg} alt="person" width="100%" />
                 </div>
               </div>
             </div>
-            <div className="col s12 m5 offset-m0 l5 offset-l0">
+            <div className="col s12 m5 offset-m0 l4 offset-l1">
               <div className="hxs">
-                {/* <div className="buycar-text-container">
-                  <div className="buycar-header">
-                    <h3>Buy A Car</h3>
-                  </div>
-                  <div className="buycar-text-content">
-                    <p className="">
-                      I had the best experience shopping with vasiti. Usability
-                      of the website was great, very good customer
-                    </p>
-                    <p>
-                      I had the best experience shopping with vasiti. Usability
-                      of the website was great, very good customer service, an
-                      all round great experience. I would definately be coming
-                      back!
-                    </p>
-                    <p>
-                      I had the best experience shopping with vasiti. Usability
-                      of the website was great, very good customer service, an
-                      all round great experience. I would definately be coming
-                      back!
-                    </p>
-                  </div>
-                  <div>
-                    <a href="/" className="btn btn-bigger">
-                      Buy a car{" "}
-                    </a>
-                  </div>
-                </div> */}
                 <div className="how-it-works-text-container">
                   <div className="how-it-works-heading">
                     <div className="title">
@@ -106,6 +79,7 @@ const HowItWorks = () => {
                     </p>
                   </div>
                 </div>
+                {/* SHOWS THIS IMAGE ON PHONE SCREEN */}
                 <div className="visible-xs">
                   <div className="how-it-works-image-container">
                     <img src={topWorkersImg} alt="person" width="100%" />

@@ -1,5 +1,7 @@
 .testimonials {
-  margin: 10rem 0;
+  /* margin: 10rem auto !important; */
+  margin-top: 10rem !important;
+  margin-bottom: 10rem !important;
 }
 .testimonials-head {
   text-align: center;
@@ -31,7 +33,9 @@
 /***** TABLET *****/
 @media screen and (min-width: 768px) {
   .testimonials {
-    margin: 15rem 0;
+    /* margin: 15rem 0; */
+    margin-top: 15rem !important;
+    margin-bottom: 15rem !important;
   }
   .testimonials-head {
     text-align: center;
@@ -52,7 +56,9 @@
 /***** LAPTOP *****/
 @media (min-width: 993px) {
   .testimonials {
-    margin: 15rem 0;
+    /* margin: 15rem 0; */
+    margin-top: 15rem !important;
+    margin-bottom: 15rem !important;
   }
   .testimonials-head {
     text-align: center;
@@ -69,12 +75,4 @@
   .slick-btn-container {
     margin: 1rem 13rem 0 0;
   }
-}
-/***** TABLET *****/
-@media screen and (min-width: 768px) {
-
-}
-/***** LAPTOP *****/
-@media (min-width: 993px) {
-
 }

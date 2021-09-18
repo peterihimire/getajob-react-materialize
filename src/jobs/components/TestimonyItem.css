@@ -21,7 +21,6 @@
 }
 .testimony-content-text {
   padding: 0 0rem 0rem 0rem;
-
   position: static;
 }
 .quote-div {
@@ -47,7 +46,7 @@
 } */
 
 .testimony-main-text {
-  width: 100% !important;
+  width: 90% !important;
 }
 /***** TABLET *****/
 @media screen and (min-width: 768px) {
@@ -55,7 +54,6 @@
     display: block;
   }
   .testimony-card {
-    /* width: 400px; */
     margin: 2rem auto;
   }
   .testimony-content-text {
@@ -100,11 +98,4 @@
     width: 600px !important;
   }
 }
-/***** TABLET *****/
-@media screen and (min-width: 768px) {
 
-}
-/***** LAPTOP *****/
-@media (min-width: 993px) {
-
-}

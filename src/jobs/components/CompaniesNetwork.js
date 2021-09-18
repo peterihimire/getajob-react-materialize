@@ -11,7 +11,7 @@ const CompaniesNetwork = () => {
       <div className="container">
         <div className="row">
           <div className="col s12">
-            <div className="col s12 m7 l5">
+            <div className="col s12 m6 l5">
               <div className="hxs">
                 <div className="companies-network-text-container">
                   <div className="title">
@@ -29,7 +29,7 @@ const CompaniesNetwork = () => {
                   </p>
                   <div className="">
                     <Link to="/" className="learn-more">
-                      learn more{" "}
+                      learn more
                       <span>
                         <FaArrowRight />
                       </span>
@@ -38,7 +38,7 @@ const CompaniesNetwork = () => {
                 </div>
               </div>
             </div>
-            <div className="col s12 m5 offset-m0 l5 offset-l2">
+            <div className="col s12 m6 offset-m0 l5 offset-l2">
               <div className="companies-network-img-container">
                 <img src={homeImg} className="" alt="car" width="100%" />
               </div>

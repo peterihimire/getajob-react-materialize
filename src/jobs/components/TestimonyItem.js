@@ -8,31 +8,29 @@ const TestimonyItem = (props) => {
   const { testimonials } = props;
   console.log(testimonials);
   return (
-    <>
-      <section className="testimony-content ">
-        <div className="testimony-img ">
-          <div className="testimony-img-container">
-            <img src={testimonials.image} alt="people" />
+    <div className="testimony-content ">
+      <div className="testimony-img ">
+        <div className="testimony-img-container">
+          <img src={testimonials.image} alt="people" />
+        </div>
+      </div>
+      <div className="testimony-content-text">
+        <div className="quote-div">
+          <img src={quoteIcon} alt="" />
+        </div>
+        <div className="testimony-main-div">
+          <div className="testimony-main-text">
+            <p>{testimonials.testimony}</p>
+          </div>
+          <div className="testimony-name">
+            <p>{testimonials.name}</p>
+          </div>
+          <div className="testimony-role">
+            <p>{testimonials.role}</p>
           </div>
         </div>
-        <div className="testimony-content-text">
-          <div className="quote-div">
-            <img src={quoteIcon} alt="" />
-          </div>
-          <div className="testimony-main-div">
-            <div className="testimony-main-text">
-              <p>{testimonials.testimony}</p>
-            </div>
-            <div className="testimony-name">
-              <p>{testimonials.name}</p>
-            </div>
-            <div className="testimony-role">
-              <p>{testimonials.role}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+      </div>
+    </div>
   );
 };
 
