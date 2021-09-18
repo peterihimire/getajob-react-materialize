@@ -212,3 +212,11 @@ input::placeholder {
     padding: 0rem 0 0 0;
   }
 }
+/***** TABLET *****/
+@media screen and (min-width: 768px) {
+
+}
+/***** LAPTOP *****/
+@media (min-width: 993px) {
+
+}

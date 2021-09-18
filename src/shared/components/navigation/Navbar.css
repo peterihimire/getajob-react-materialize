@@ -169,3 +169,11 @@ nav .sidenav-trigger {
     text-align: center !important;
   }
 }
+/***** TABLET *****/
+@media screen and (min-width: 768px) {
+
+}
+/***** LAPTOP *****/
+@media (min-width: 993px) {
+
+}

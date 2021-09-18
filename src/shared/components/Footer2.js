@@ -1,25 +1,15 @@
 import React from "react";
-import "./Footer.css";
-// import logoAlt from "../assets/logo-alt.svg";
-// import twIcon from "../assets/tw.svg";
-// import fbIcon from "../assets/fb.svg";
-// import inIcon from "../assets/in.svg";
+import "./Footer2.css";
 import logoAlt from "../../assets/logo-alt.svg";
 import twitter from "../../assets/Twitter-green.svg";
 
 const Footer = () => {
   return (
     <footer>
-      <div className="container">
-        {/* <div className="footer-logo center">
-          <a href="/">
-            <img src={logoAlt} alt="paymonthly logo-alt" />
-          </a>
-        </div>
-        <hr /> */}
-        <div className="row footer-content-one">
-          <div className=" col s12 m12 l3 ">
-            <div className="s12 m4  black-text">
+      <div className="footer-wrapper container">
+        <div className="footer-one">
+          <div className="footer-one-one">
+            <div className="footer-item">
               <div className="footer-logo">
                 <img src={logoAlt} alt="" />
               </div>
@@ -32,8 +22,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className=" col s12 m12 l8 offset-l1 ">
-            <div className="footer-item col s6 m3  black-text">
+
+          <div className="footer-one-two">
+            <div className="footer-item">
               <p>information</p>
               <ul>
                 <li>
@@ -47,35 +38,36 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="footer-item col s6 m3  black-text">
-              <p>information</p>
+            <div className="footer-item">
+              <p>job seekers</p>
               <ul>
                 <li>
-                  <a href="/">About us</a>
+                  <a href="/">Sign up to ride</a>
                 </li>
                 <li>
-                  <a href="/">Earnings</a>
+                  <a href="/">Fare Estimate</a>
                 </li>
                 <li>
-                  <a href="/">Cities</a>
+                  <a href="/">Lyft Pink</a>
                 </li>
               </ul>
             </div>
-            <div className="footer-item col s6 m3  black-text">
-              <p>information</p>
+            <div className="footer-item">
+              <p>employers</p>
               <ul>
                 <li>
-                  <a href="/">About us</a>
+                  <a href="/">Careers</a>
                 </li>
                 <li>
-                  <a href="/">Earnings</a>
+                  <a href="/">LyftUp</a>
                 </li>
                 <li>
-                  <a href="/">Cities</a>
+                  <a href="/">Business</a>
                 </li>
               </ul>
             </div>
-            <div className="footer-item col s6 m3  black-text">
+
+            <div className="footer-item">
               <p>social media:</p>
               <div className="footer-social-div">
                 <div className="footer-social">
@@ -94,7 +86,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="footer-copyright">
+
+        <div className="footer-two">
           <p>&copy; Copyright Get-A-Job RMS 2019, All rights reserved</p>
         </div>
       </div>

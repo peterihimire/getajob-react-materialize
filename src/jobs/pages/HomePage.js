@@ -5,6 +5,10 @@ import Banner from "../../shared/components/Banner";
 import RecommendedJobs from "../../jobs/components/RecommendedJobs";
 import HowItWorks from "../components/HowItWorks";
 import PopularCategories from "../../jobs/components/PopularCategories";
+import CompaniesNetwork from "../components/CompaniesNetwork";
+import Testimonial from "../components/Testimonials";
+import GetStarted from "../components/GetStarted";
+
 const HomePage = () => {
   return (
     <div id="page-container" className="App">
@@ -14,13 +18,9 @@ const HomePage = () => {
         <RecommendedJobs />
         <HowItWorks />
         <PopularCategories />
-        <div className="main-content">
-          <div className="main-content-container">
-            {/* <h2>This is the homepage</h2> */}
-            {/* <HowItWorks /> */}
-            {/*  */}
-          </div>
-        </div>
+        <CompaniesNetwork />
+        <Testimonial />
+        <GetStarted />
       </div>
       <Footer />
     </div>
