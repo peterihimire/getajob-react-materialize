@@ -7,13 +7,13 @@ import { Link } from "react-router-dom";
 
 const CompaniesNetwork = () => {
   return (
-    <section className="sellcar">
+    <section className="companies-network">
       <div className="container">
         <div className="row">
           <div className="col s12">
             <div className="col s12 m7 l5">
               <div className="hxs">
-                <div className="sellcar-text-container">
+                <div className="companies-network-text-container">
                   <div className="title">
                     <h4>Over 1000+ jobs from top companies in our network</h4>
                   </div>
@@ -39,7 +39,7 @@ const CompaniesNetwork = () => {
               </div>
             </div>
             <div className="col s12 m5 offset-m0 l5 offset-l2">
-              <div className="sellcar-img-container">
+              <div className="companies-network-img-container">
                 <img src={homeImg} className="" alt="car" width="100%" />
               </div>
             </div>

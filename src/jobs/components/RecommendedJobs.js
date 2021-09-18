@@ -6,14 +6,14 @@ import JobSlide from "./JobSlide";
 
 const RecommendedJobs = () => {
   return (
-    <div className="recommended">
+    <section className="recommended">
       <div className="title recommended-title-container container">
         <h4>Recommended Jobs</h4>
       </div>
       <div className="">
         <JobSlide />
       </div>
-    </div>
+    </section>
   );
 };
 

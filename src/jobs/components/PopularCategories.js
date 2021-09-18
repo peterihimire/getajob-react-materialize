@@ -5,7 +5,7 @@ import oilIcon from "../../assets/oil-and-gas.svg";
 
 const PopularCategories = () => {
   return (
-    <div className="popular container">
+    <section className="popular container">
       <div className="popular-heading">
         <div className="title">
           <h4>Popular Categories</h4>
@@ -85,7 +85,7 @@ const PopularCategories = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

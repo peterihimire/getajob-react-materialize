@@ -5,6 +5,7 @@ import JobItem from "./JobItem";
 import jobs from "../../job-items";
 import arrowLeft from "../../assets/arrow-left.svg";
 import arrowRight from "../../assets/arrow-right.svg";
+// import M from "materialize-css/dist/js/materialize.min.js";
 
 const JobSlide = () => {
   console.log(jobs);
@@ -14,7 +15,7 @@ const JobSlide = () => {
     <div className="job-slide">
       <div className="job-slide-container">
         {/* FOR LAPTOPS & TABLETS */}
-        <div className="hidden-xs   visible-xl carousel-div">
+        <div className="hide-on-med-and-down">
           <div className="carousl">
             <div style={{ padding: `1 ${chevronWidth}px` }}>
               <ItemsCarousel
@@ -42,7 +43,45 @@ const JobSlide = () => {
               >
                 {jobs.map((job) => {
                   return (
-                    <div className="one-slide">
+                    <div className="one-slide" key={job.id}>
+                      <JobItem jobs={job} key={job.id} />
+                    </div>
+                  );
+                })}
+              </ItemsCarousel>
+            </div>
+          </div>
+        </div>
+
+        {/* FOR TABLETS */}
+        <div className="hidden-xs hide-on-large-only ">
+          <div className="carousl">
+            <div>
+              <ItemsCarousel
+                requestToChangeActive={setActiveItemIndex}
+                activeItemIndex={activeItemIndex}
+                numberOfCards={2}
+                gutter={20}
+                freeScrolling={true}
+                showSlither={true}
+                firstAndLastGutter={true}
+                outsideChevron={false}
+                leftChevron={
+                  <button className="chev-btn">
+                    <img src={arrowLeft} alt="" />
+                  </button>
+                }
+                rightChevron={
+                  <button className="chev-btn">
+                    <img src={arrowRight} alt="" />
+                  </button>
+                }
+                chevronWidth={chevronWidth}
+                // infiniteLoop={true}
+              >
+                {jobs.map((job) => {
+                  return (
+                    <div className="one-slide" key={job.id}>
                       <JobItem jobs={job} key={job.id} />
                     </div>
                   );
@@ -53,7 +92,7 @@ const JobSlide = () => {
         </div>
 
         {/* FOR PHONES */}
-        <div className="visible-xs  ">
+        <div className="hide-on-med-and-up">
           <div className="carousl">
             <div>
               <ItemsCarousel
@@ -81,7 +120,7 @@ const JobSlide = () => {
               >
                 {jobs.map((job) => {
                   return (
-                    <div className="one-slide">
+                    <div className="one-slide" key={job.id}>
                       <JobItem jobs={job} key={job.id} />
                     </div>
                   );

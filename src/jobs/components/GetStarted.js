@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const GetStarted = () => {
   return (
-    <div className="get-started container">
+    <section className="get-started container">
       <div className="get-started-content">
         <h2>Get a Job you actually like</h2>
         <p>Create an account and start applying</p>
@@ -15,7 +15,7 @@ const GetStarted = () => {
           </button>
         </Link>
       </div>
-    </div>
+    </section>
   );
 };
 

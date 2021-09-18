@@ -5,13 +5,13 @@ import greenCheck from "../../assets/greencheck-round.svg";
 
 const HowItWorks = () => {
   return (
-    <section className="buycar">
+    <section className="how-it-works">
       <div className="container">
         <div className="row">
           <div className="col s12">
             <div className="col s12 m7 l7 ">
               <div className="hidden-xs">
-                <div className="buycar-image-container">
+                <div className="how-it-works-image-container">
                   <img src={topWorkersImg} alt="person" width="100%" />
                 </div>
               </div>
@@ -107,7 +107,7 @@ const HowItWorks = () => {
                   </div>
                 </div>
                 <div className="visible-xs">
-                  <div className="buycar-image-container">
+                  <div className="how-it-works-image-container">
                     <img src={topWorkersImg} alt="person" width="100%" />
                   </div>
                 </div>

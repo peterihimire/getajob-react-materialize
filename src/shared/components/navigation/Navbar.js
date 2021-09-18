@@ -7,6 +7,7 @@ import M from "materialize-css/dist/js/materialize.min.js";
 import { NavLink } from "react-router-dom";
 
 const Navbar = (props) => {
+  console.log(props);
   useEffect(() => {
     // sidenav
     const sideNav = document.querySelector(".sidenav");

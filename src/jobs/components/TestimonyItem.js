@@ -9,7 +9,7 @@ const TestimonyItem = (props) => {
   console.log(testimonials);
   return (
     <>
-      <div className="testimony-content ">
+      <section className="testimony-content ">
         <div className="testimony-img ">
           <div className="testimony-img-container">
             <img src={testimonials.image} alt="people" />
@@ -31,7 +31,7 @@ const TestimonyItem = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
