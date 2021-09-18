@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import "./Navbar.css";
 import logo from "../../../assets/logo.svg";
 import MenuIcon from "../../../assets/menu-icon.svg";
@@ -8,6 +8,38 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = (props) => {
   console.log(props);
+  const [navColor, setNavColor] = useState(false);
+
+  // // FOR NAV COLOR
+  // const navColorHandler = () => {
+  //   let position = window.pageYOffset;
+  //   console.log(position);
+  //   if (position > 70) {
+  //     console.log("i am position 70 above");
+  //     setNavColor(true);
+  //   } else {
+  //     setNavColor(navColor);
+  //   }
+  // };
+
+  const navColorHandler = useCallback(() => {
+    let position = window.pageYOffset;
+    console.log(position);
+    if (position > 70) {
+      console.log("i am position 70 above");
+      setNavColor(true);
+    } else {
+      setNavColor(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      console.log(window.scrollY);
+      navColorHandler();
+    });
+  }, [navColorHandler]);
+
   useEffect(() => {
     // sidenav
     const sideNav = document.querySelector(".sidenav");
@@ -17,7 +49,10 @@ const Navbar = (props) => {
   return (
     <>
       <div className="navbar">
-        <nav className="trans-nav" role="navigation">
+        <nav
+          className={navColor ? "trans-nav nav-color" : "trans-nav"}
+          role="navigation"
+        >
           <div className=" container nav-wrapper">
             <div className="logo-container">
               <a href="/" className="brand-logo left">

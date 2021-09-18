@@ -8,7 +8,7 @@
 }
 nav.trans-nav {
   position: fixed;
-  background-color: transparent;
+  background-color: transparent !important;
   /* background-color: rgb(255, 255, 255); */
   z-index: 10;
   height: 64px;
@@ -24,6 +24,14 @@ nav.trans-nav {
   font-size: 13px !important;
   font-family: var(--sec-font);
 }
+
+/* color nav */
+nav.nav-color {
+  background-color: var(--main-white) !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+/* end of color nav */
 .logo {
   width: 80px;
   position: relative;
@@ -171,9 +179,7 @@ nav .sidenav-trigger {
 }
 /***** TABLET *****/
 @media screen and (min-width: 768px) {
-
 }
 /***** LAPTOP *****/
 @media (min-width: 993px) {
-
 }
