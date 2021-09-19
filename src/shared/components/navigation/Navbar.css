@@ -33,12 +33,12 @@ nav.nav-color {
 }
 /* end of color nav */
 .logo {
-  width: 80px;
+  width: 50px;
   position: relative;
-  /* top: 20px; */
+  top: 10px;
 }
 /* .brand-logo img {
-  width: 45% !important;
+  width: 100% !important;
 } */
 .nav-login-group {
   display: flex;
@@ -179,7 +179,17 @@ nav .sidenav-trigger {
 }
 /***** TABLET *****/
 @media screen and (min-width: 768px) {
+  .logo {
+    width: 60px;
+    position: relative;
+    top: 10px;
+  }
 }
 /***** LAPTOP *****/
 @media (min-width: 993px) {
+  .logo {
+    width: 60px;
+    position: relative;
+    top: 10px;
+  }
 }

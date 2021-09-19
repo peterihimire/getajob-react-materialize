@@ -104,7 +104,7 @@ class Banner extends Component {
 
   render() {
     return (
-      <section className="home">
+      <section className="banner">
         <div className="row full-height">
           <div className="container full-height">
             <div className="carousel carousel-slider full-height">
@@ -115,11 +115,13 @@ class Banner extends Component {
                       <h1>
                         Find a <span>job</span> easily
                       </h1>
-                      <p className="hide-on-med-and-down ">
-                        With verified, up-to-date job listings directly from
-                        employer websites, we create a premium experience for
-                        job seekers, employers, and data seekers alike.
-                      </p>
+                      <div className="text-para">
+                        <p className="hide-on-med-and-down ">
+                          With verified, up-to-date job listings directly from
+                          employer websites, we create a premium experience for
+                          job seekers, employers, and data seekers alike.
+                        </p>
+                      </div>
 
                       <div className="hide-on-med-and-down  form-div">
                         <form>
@@ -150,19 +152,18 @@ class Banner extends Component {
                             </button>
                           </div>
                         </form>
-
-                        <div className="trusted-companies-div">
-                          <p>Trusted by:</p>
-                          <div className="trusted-companies">
-                            <div className="trusted-company">
-                              <img src={paystack} alt="" />
-                            </div>
-                            <div className="trusted-company">
-                              <img src={google} alt="" />
-                            </div>
-                            <div className="trusted-company">
-                              <img src={kpmg} alt="" />
-                            </div>
+                      </div>
+                      <div className="trusted-companies-div hide-on-med-and-down">
+                        <p>Trusted by:</p>
+                        <div className="trusted-companies">
+                          <div className="trusted-company">
+                            <img src={paystack} alt="" />
+                          </div>
+                          <div className="trusted-company">
+                            <img src={google} alt="" />
+                          </div>
+                          <div className="trusted-company">
+                            <img src={kpmg} alt="" />
                           </div>
                         </div>
                       </div>
@@ -179,11 +180,13 @@ class Banner extends Component {
                   </div>
                   <div className="col s12 hide-on-large-only">
                     <div className="main-text-container">
-                      <p>
-                        With verified, up-to-date job listings directly from
-                        employer websites, we create a premium experience for
-                        job seekers, employers, and data seekers alike.
-                      </p>
+                      <div className="text-para">
+                        <p>
+                          With verified, up-to-date job listings directly from
+                          employer websites, we create a premium experience for
+                          job seekers, employers, and data seekers alike.
+                        </p>
+                      </div>
 
                       <div className="form-div">
                         <form>

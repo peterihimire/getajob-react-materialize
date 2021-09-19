@@ -41,6 +41,18 @@ footer {
   font-size: 17px;
   text-decoration: underline;
 }
+.footer-item li {
+  padding: 0.6rem 0;
+  list-style: none;
+}
+.footer-item a {
+  color: var(--main-black);
+  font-size: 14px;
+}
+.footer-text p {
+  font-size: 14px;
+  line-height: var(--line-height);
+}
 /***** TABLET *****/
 @media screen and (min-width: 768px) {
   .footer-item p {
@@ -50,6 +62,18 @@ footer {
     font-family: var(--font-reg);
     font-size: 17px;
     text-decoration: none;
+  }
+  .footer-item li {
+    padding: 0.6rem 0;
+    list-style: none;
+  }
+  .footer-item a {
+    color: var(--main-black);
+    font-size: 14px;
+  }
+  .footer-text p {
+    font-size: 14px;
+    line-height: var(--line-height);
   }
 }
 /***** LAPTOP *****/
@@ -61,5 +85,17 @@ footer {
     font-family: var(--font-reg);
     font-size: 17px;
     text-decoration: none;
+  }
+  .footer-item li {
+    padding: 0.6rem 0;
+    list-style: none;
+  }
+  .footer-item a {
+    color: var(--main-black);
+    font-size: 14px;
+  }
+  .footer-text p {
+    font-size: 14px;
+    line-height: var(--line-height);
   }
 }
