@@ -20,15 +20,17 @@ const Footer = () => {
         <div className="row footer-content-one">
           <div className=" col s12 m12 l3 ">
             <div className="s12 m4  black-text">
-              <div className="footer-logo">
-                <img src={logoAlt} alt="" />
-              </div>
-              <div className="footer-text">
-                <p>
-                  Getajobng provides a full online service for anyone looking
-                  for a new job. We're not a recruitment agency, we're a job
-                  site.
-                </p>
+              <div className="footer-logo-and-info">
+                <div className="footer-logo">
+                  <img src={logoAlt} alt="" />
+                </div>
+                <div className="footer-text">
+                  <p>
+                    Getajobng provides a full online service for anyone looking
+                    for a new job. We're not a recruitment agency, we're a job
+                    site.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

@@ -26,11 +26,13 @@
   height: auto;
   display: block;
 }
-.how-it-works-img-container img {
+.how-it-works-image-container img {
   width: 100%;
   max-width: 100%;
   height: auto;
   display: block;
+  position: relative;
+  margin-top: 0px;
 }
 .how-it-works-text-container p {
   padding: 0 0 0rem 0;
@@ -77,11 +79,13 @@
     grid-column-gap: 1.5rem;
     align-items: center;
   }
-  .how-it-works-img-container {
+  .how-it-works-image-container {
     width: 100%;
     max-width: 100%;
     height: auto;
     display: block;
+    position: relative;
+    margin-top: 300px;
   }
   .how-it-works-img-container img {
     width: 100%;
@@ -100,13 +104,15 @@
   .how-it-works {
     margin-bottom: 15rem !important;
   }
-  .how-it-works-img-container {
+  .how-it-works-image-container {
     width: 100%;
     max-width: 100%;
     height: auto;
     display: block;
+    position: relative;
+    margin-top: 0px !important;
   }
-  .how-it-works-img-container img {
+  .how-it-works-image-container img {
     width: 100%;
     max-width: 100%;
     height: auto;
